@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Landmark, Smartphone, Shield, HandCoins, Users } from 'lucide-react';
+import { Landmark, Smartphone, Shield, HandCoins, Users, ArrowRight } from 'lucide-react';
 
 const Services = () => {
   const services = [
@@ -72,14 +72,14 @@ const Services = () => {
           <motion.div 
             key={service.id} 
             variants={item}
-            className="flex-1 p-6 hover:bg-slate-50 transition-colors cursor-pointer group flex flex-col"
+            className="flex-1 px-6 pt-6 pb-4 hover:bg-slate-50 transition-colors cursor-pointer group flex flex-col"
           >
-            <div className="flex items-start gap-4 mb-4">
+            <div className="flex items-start gap-4 mb-2">
               <div className={`w-12 h-12 rounded-full ${service.bg} flex-shrink-0 flex items-center justify-center`}>
                 <service.icon className={`w-6 h-6 ${service.color}`} />
               </div>
               <div>
-                <h3 className="text-base font-bold text-slate-800 mb-1 leading-tight group-hover:text-finova-blue transition-colors">
+                <h3 className="text-[15px] xl:text-base font-bold text-slate-800 mb-1 leading-tight whitespace-nowrap group-hover:text-finova-blue transition-colors">
                   {service.title}
                 </h3>
                 <p className="text-xs text-slate-500 leading-relaxed">
@@ -88,10 +88,8 @@ const Services = () => {
               </div>
             </div>
             
-            <div className="mt-auto flex justify-end">
-              <span className={`${service.color} opacity-50 group-hover:opacity-100 group-hover:translate-x-1 transition-all`}>
-                →
-              </span>
+            <div className="mt-auto relative h-4 w-full">
+              <ArrowRight className={`absolute top-0 left-4 group-hover:left-[64px] w-4 h-4 ${service.color} opacity-40 group-hover:opacity-100 transition-all duration-300`} />
             </div>
           </motion.div>
         ))}

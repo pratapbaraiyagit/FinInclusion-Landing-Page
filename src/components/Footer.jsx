@@ -9,8 +9,7 @@ const Footer = () => {
     <footer className="bg-slate-50 pt-20 pb-10 border-t border-slate-200">
       <div className="max-w-[1280px] mx-auto px-6 md:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8 mb-16">
-          
-          <div className="lg:col-span-4">
+          <div className="lg:col-span-4 xl:col-span-3">
             <div className="mb-8 scale-90 origin-left">
               <Logo />
             </div>
@@ -26,7 +25,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="lg:col-span-2 lg:col-start-6">
+          <div className="lg:col-span-2 lg:col-start-5 xl:col-start-5">
             <h4 className="font-bold text-finova-navy mb-6">Company</h4>
             <ul className="space-y-4">
               {['About Us', 'Careers', 'Contact'].map((link, i) => (
