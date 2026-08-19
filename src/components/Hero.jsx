@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const Hero = () => {
   return (
-    <section className="relative pt-28 pb-32 lg:pt-32 lg:pb-[235px] overflow-hidden bg-white">
+    <section className="relative pt-24 pb-32 lg:pt-24 lg:pb-[235px] overflow-hidden bg-white">
       {/* Dramatic Blue Sweeping Curve Background (Desktop) */}
       <div className="hidden lg:block absolute inset-0 bg-finova-blue z-0"
         style={{ clipPath: 'ellipse(80% 120% at 120% 100%)' }}>
