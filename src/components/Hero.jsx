@@ -99,7 +99,7 @@ const Hero = () => {
               {/* Banking: Top Right */}
               <motion.div animate={{ y: [0, -4, 0] }} transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
                 className="absolute z-20 flex flex-col items-center -translate-x-1/2 -translate-y-1/2"
-                style={{ top: '5%', left: '82%' }}>
+                style={{ top: '5%', left: '85%' }}>
                 <div className="w-16 h-16 rounded-full bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] flex items-center justify-center text-finova-navy border border-slate-100 mb-0">
                   <Landmark className="w-7 h-7 stroke-[1.5]" />
                 </div>
@@ -109,7 +109,7 @@ const Hero = () => {
               {/* Credit Access: Middle Left (Mirrored to Digital Payments) */}
               <motion.div animate={{ y: [0, 4, 0] }} transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
                 className="absolute z-20 flex flex-col items-center -translate-x-1/2 -translate-y-1/2"
-                style={{ top: '50%', left: '-5%' }}>
+                style={{ top: '10%', left: '-5%' }}>
                 <div className="w-16 h-16 rounded-full bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] flex items-center justify-center text-finova-green border border-slate-100 mb-0">
                   <CreditCard className="w-7 h-7 stroke-[1.5]" />
                 </div>
@@ -119,7 +119,7 @@ const Hero = () => {
               {/* AEPS & Micro ATM: Bottom Left (Mirrored to Insurance) */}
               <motion.div animate={{ y: [0, -3, 0] }} transition={{ duration: 4.2, repeat: Infinity, ease: "easeInOut", delay: 1 }}
                 className="absolute z-20 flex flex-col items-center -translate-x-1/2 -translate-y-1/2"
-                style={{ top: '82%', left: '5%' }}>
+                style={{ top: '60%', left: '-22%' }}>
                 <div className="w-16 h-16 rounded-full bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] flex items-center justify-center text-finova-blue border border-slate-100 mb-0">
                   <Smartphone className="w-7 h-7 stroke-[1.5]" />
                 </div>
@@ -129,7 +129,7 @@ const Hero = () => {
               {/* Digital Payments: Middle Right */}
               <motion.div animate={{ y: [0, -4, 0] }} transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut", delay: 0.8 }}
                 className="absolute z-20 flex flex-col items-center -translate-x-1/2 -translate-y-1/2"
-                style={{ top: '50%', left: '105%' }}>
+                style={{ top: '40%', left: '105%' }}>
                 <div className="w-16 h-16 rounded-full bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] flex items-center justify-center text-finova-blue border border-slate-100 mb-0">
                   <Smartphone className="w-7 h-7 stroke-[1.5]" />
                 </div>
@@ -139,7 +139,7 @@ const Hero = () => {
               {/* Insurance: Bottom Right */}
               <motion.div animate={{ y: [0, 5, 0] }} transition={{ duration: 3.8, repeat: Infinity, ease: "easeInOut", delay: 0.2 }}
                 className="absolute z-20 flex flex-col items-center -translate-x-1/2 -translate-y-1/2"
-                style={{ top: '82%', left: '95%' }}>
+                style={{ top: '75%', left: '95%' }}>
                 <div className="w-16 h-16 rounded-full bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] flex items-center justify-center text-finova-green border border-slate-100 mb-0">
                   <Shield className="w-7 h-7 stroke-[1.5]" />
                 </div>
