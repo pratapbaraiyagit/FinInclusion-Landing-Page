@@ -24,7 +24,7 @@ const Hero = () => {
             className="w-full max-w-2xl lg:max-w-none xl:max-w-2xl"
           >
             <h1 className="text-4xl md:text-5xl lg:text-5xl xl:text-[3.4rem] font-bold leading-tight mb-6 tracking-tight">
-              <span className="text-finova-navy md:whitespace-nowrap">Empowering Communities.</span><br />
+              <span className="text-finova-navy md:whitespace-nowrap lg:whitespace-normal xl:whitespace-nowrap">Empowering Communities.</span><br />
               <span className="text-finova-green">Enriching Lives.</span>
             </h1>
 
