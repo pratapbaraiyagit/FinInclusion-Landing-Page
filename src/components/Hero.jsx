@@ -11,11 +11,7 @@ const Hero = () => {
         <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(#ffffff 1px, transparent 1px)', backgroundSize: '20px 20px' }}></div>
       </div>
 
-      {/* Dramatic Blue Sweeping Curve Background (Tablet/Mobile) */}
-      <div className="block lg:hidden absolute inset-0 bg-finova-blue z-0 top-[45%] sm:top-[50%]"
-        style={{ clipPath: 'ellipse(150% 100% at 100% 100%)' }}>
-        <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(#ffffff 1px, transparent 1px)', backgroundSize: '20px 20px' }}></div>
-      </div>
+
 
       <div className="max-w-[1440px] mx-auto px-6 md:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
@@ -74,10 +70,15 @@ const Hero = () => {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative lg:h-[650px] w-full flex items-center justify-center mt-12 lg:mt-0"
+            className="relative w-full h-[320px] sm:h-[400px] md:h-[480px] lg:h-[650px] flex items-center justify-center mt-12 lg:mt-0"
           >
-            {/* Unified wrapper for precise absolute anchoring on a circle */}
-            <div className="relative w-full max-w-[480px] aspect-square mt-8 lg:mt-0">
+            {/* Mobile Blue Background (Anchored to top of this exact container, extends infinitely downwards, clipped by section) */}
+            <div className="block lg:hidden absolute top-0 left-1/2 -translate-x-1/2 w-[200vw] h-[200vh] bg-finova-blue z-[-1]">
+              <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(#ffffff 1px, transparent 1px)', backgroundSize: '20px 20px' }}></div>
+            </div>
+
+            {/* Unified wrapper using CSS scale to shrink layout, completely detached from document flow to prevent layout gaps */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[480px] h-[480px] min-w-[480px] scale-[0.55] sm:scale-[0.75] md:scale-90 lg:scale-100 origin-center">
 
               {/* Faint Concentric Rings Behind Image */}
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[110%] h-[110%] rounded-full border border-white/20 z-0 pointer-events-none"></div>
@@ -106,7 +107,7 @@ const Hero = () => {
                 <span className="text-[11px] font-bold text-slate-700 bg-white px-4 py-1 rounded-full shadow-md border border-slate-100 text-center leading-tight -mt-3 relative z-10">Banking</span>
               </motion.div>
 
-              {/* Credit Access: Middle Left (Mirrored to Digital Payments) */}
+              {/* Credit Access: Middle Left */}
               <motion.div animate={{ y: [0, 4, 0] }} transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
                 className="absolute z-20 flex flex-col items-center -translate-x-1/2 -translate-y-1/2"
                 style={{ top: '10%', left: '-5%' }}>
@@ -116,7 +117,7 @@ const Hero = () => {
                 <span className="text-[11px] font-bold text-slate-700 bg-white px-4 py-1 rounded-full shadow-md border border-slate-100 text-center leading-tight -mt-3 relative z-10">Credit<br />Access</span>
               </motion.div>
 
-              {/* AEPS & Micro ATM: Bottom Left (Mirrored to Insurance) */}
+              {/* AEPS & Micro ATM: Bottom Left */}
               <motion.div animate={{ y: [0, -3, 0] }} transition={{ duration: 4.2, repeat: Infinity, ease: "easeInOut", delay: 1 }}
                 className="absolute z-20 flex flex-col items-center -translate-x-1/2 -translate-y-1/2"
                 style={{ top: '60%', left: '-22%' }}>

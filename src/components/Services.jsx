@@ -79,7 +79,7 @@ const Services = () => {
                 <service.icon className={`w-6 h-6 ${service.color}`} />
               </div>
               <div>
-                <h3 className="text-[15px] xl:text-base font-bold text-slate-800 mb-1 leading-tight whitespace-nowrap group-hover:text-finova-blue transition-colors">
+                <h3 className="text-sm sm:text-[15px] xl:text-base font-bold text-slate-800 mb-1 leading-tight whitespace-nowrap group-hover:text-finova-blue transition-colors">
                   {service.title}
                 </h3>
                 <p className="text-xs text-slate-500 leading-relaxed">
