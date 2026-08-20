@@ -63,12 +63,21 @@ const Header = () => {
       {mobileMenuOpen && (
         <div className="lg:hidden absolute top-full left-0 w-full bg-white border-t border-slate-100 shadow-lg px-6 py-4 flex flex-col gap-4">
           {navLinks.map((link, index) => (
-            <a key={index} href={link.href} className="text-base font-medium text-slate-700 py-2 border-b border-slate-50 flex items-center justify-between">
+            <a 
+              key={index} 
+              href={link.href} 
+              className="text-base font-medium text-slate-700 py-2 border-b border-slate-50 flex items-center justify-between"
+              onClick={() => setMobileMenuOpen(false)}
+            >
               {link.name}
               {link.hasDropdown && <ChevronDown className="w-4 h-4" />}
             </a>
           ))}
-          <a href="#" className="bg-finova-navy text-white px-5 py-3 rounded-md text-center font-medium mt-2 flex items-center justify-center gap-2">
+          <a 
+            href="#" 
+            className="bg-finova-navy text-white px-5 py-3 rounded-md text-center font-medium mt-2 flex items-center justify-center gap-2"
+            onClick={() => setMobileMenuOpen(false)}
+          >
             <UserPlus className="w-4 h-4" />
             Partner With Us
           </a>
